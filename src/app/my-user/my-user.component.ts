@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyUserComponent implements OnInit {
 
-users?:any[]
+creds?:any[]
 
 
   constructor(private myGitService:MyGitService) { }
 
-getUsers(){
+getUser(){
   this.myGitService.getData().subscribe((data) => {
     console.log(data);
-    this.users = data
+    this.creds = data
     
   });
 }

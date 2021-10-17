@@ -1,1 +1,7 @@
-<p>my-user works!</p>
+<button (click)="getUser()">Get mydata</button>
+<div *ngFor="let obj of creds  | keyvalue">
+    <div>
+        <strong>{{obj.key.name}}: {{obj.value}}</strong>
+    </div>
+ 
+</div>
