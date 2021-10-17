@@ -11,6 +11,8 @@ public githubUserQuery?:string;
 
   constructor() { }
 
+  public searchUser(){}
+
   ngOnInit(): void {
   }
 
