@@ -1,0 +1,8 @@
+
+
+<ul [ngClass]="'type'" *ngFor="let user of users">
+    <img [ngClass]="'img'" src="{{user.avatar_url}}">
+    <li>{{user.url}}</li>
+    <li>{{user.repos_url}}</li>
+    <li>{{user.login}}</li>
+</ul>

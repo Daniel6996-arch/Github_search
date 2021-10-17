@@ -1,4 +1,4 @@
-<div class="container mt-3">
+<!--<div class="container mt-3">
     <div class="row">
         <div class="col">
             <div class="card">
@@ -19,8 +19,13 @@
         </div>
     </div>
         <div class="col">
-           <ul>
-               <img src="{{users.avatar_url}}">
+           <ul *ngFor="let userof users">
+               <img src="{{user.avatar_url}}">
            </ul>
         </div>
+</div>-->
+<div>
+    <h1>Github API getUsers</h1>
 </div>
+<button type="submit" (click)="getUsers()">Get Users</button>
+<app-user [users] ="users"></app-user>

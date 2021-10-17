@@ -13,7 +13,7 @@ users?:any[]
 
   constructor(private githubService:GithubService) { }
 
-getUser(){
+getUsers(){
   this.githubService.getData().subscribe((data) => {
     console.log(data);
     this.users = data
