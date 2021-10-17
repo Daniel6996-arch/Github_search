@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserComponent } from './user/user.component';
 import { MyUserComponent } from './my-user/my-user.component';
 import { ReposComponent } from './repos/repos.component';
 import { NavbarComponent } from './navbar/navbar.component'
@@ -14,7 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component'
   declarations: [
     AppComponent,
     GithubComponent,
-    UserComponent,
     MyUserComponent,
     ReposComponent,
     NavbarComponent

@@ -28,6 +28,11 @@
     <h1>Github API getUsers</h1>
 </div>
 <button type="submit" (click)="getUsers()">Get Users</button>
-<app-user [users] ="users"></app-user>
+<ul [ngClass]="'type'" *ngFor="let user of users">
+    <img [ngClass]="'img'" src="{{user.avatar_url}}">
+    <li>{{user.url}}</li>
+    <li>{{user.repos_url}}</li>
+    <li>{{user.login}}</li>
+</ul>
 <app-my-user></app-my-user>
-<app-repos></app-repos>
+
