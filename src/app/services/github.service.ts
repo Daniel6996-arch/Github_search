@@ -4,7 +4,6 @@ import { CLIENT_ID, CLIENT_SECRET } from '../CREDENTIALS/cred';
 import { Observable, throwError } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
-import 'rxjs/add/operator/map'
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +16,7 @@ export class GithubService {
    public getProfile(searchQuery:any):Observable<any>{
      let dataURL = 'https://api.github.com/users/${searchQuery}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}';
      return this.httpClient.get<any>(dataURL).pipe(
-       //retry(count 1),
+       retry(count 1),
        catchError(this.handleErrors)
      )
    }
