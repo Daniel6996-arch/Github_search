@@ -6,5 +6,10 @@ import { Observable } from 'rxjs';
 })
 export class GithubService {
 
-  constructor(private) { }
+  constructor(private httpClient:HttpClient) { }
+getData():Observable<any>{ 
+  const url = "https://api.github.com/users/Daniel6996-arch"
+  return this.httpClient.get<any>(url)
+}
+
 }
