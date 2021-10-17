@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MygitService } from './mygit.service';
+import { MyGitService } from './mygit.service';
 
 describe('MygitService', () => {
-  let service: MygitService;
+  let service: MyGitService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MygitService);
+    service = TestBed.inject(MyGitService);
   });
 
   it('should be created', () => {

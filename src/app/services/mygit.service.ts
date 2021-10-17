@@ -4,11 +4,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class GithubService {
+export class MyGitService {
 
   constructor(private httpClient:HttpClient) { }
 getData():Observable<any>{ 
-  const url = "https://api.github.com/users"
+  const url = "https://api.github.com/users/Daniel6996-arch"
   return this.httpClient.get<any>(url)
 }
 

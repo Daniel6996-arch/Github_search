@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserComponent } from './user/user.component'
+import { UserComponent } from './user/user.component';
+import { MyUserComponent } from './my-user/my-user.component'
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
-    UserComponent
+    UserComponent,
+    MyUserComponent
   ],
   imports: [
     BrowserModule,
