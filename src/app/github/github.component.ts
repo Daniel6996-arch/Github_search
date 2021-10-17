@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubComponent implements OnInit {
 
-users?:String[]
+users?:any[]
 
 
   constructor(private githubService:GithubService) { }
