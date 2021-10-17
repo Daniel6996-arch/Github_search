@@ -1,7 +1,10 @@
 <button (click)="getUser()">Get mydata</button>
-<div *ngFor="let obj of creds  | keyvalue">
+<!--<div *ngFor="let obj of creds | keyvalue">
     <div>
-        <strong>{{obj.key.name}}: {{obj.value}}</strong>
+        <ul>
+            <li>{{obj.key}}: {{obj.value}}</li>
+        </ul>
     </div>
  
-</div>
+</div>-->
+<pre>{{creds?[name]}}</pre>
