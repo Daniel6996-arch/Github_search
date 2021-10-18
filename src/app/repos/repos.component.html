@@ -19,6 +19,8 @@
    <ul [ngClass]="'repo'" *ngFor="let repo of repos">
        <pre>{{repo.name}}</pre>
        <a href="{{repo.html_url}}" [ngClass]="'link'" target="_blank">{{repo.html_url}}</a>
+       <pre>Created on: {{repo.created_at | date}}</pre>
+       <pre>Last updated on: {{repo.updated_at | date}}</pre>
    </ul>
 </div>
 </div>
