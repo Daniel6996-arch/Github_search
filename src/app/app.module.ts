@@ -8,14 +8,16 @@ import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MyUserComponent } from './my-user/my-user.component';
 import { ReposComponent } from './repos/repos.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { FilterPipe } from './filter.pipe'
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
     MyUserComponent,
     ReposComponent,
-    NavbarComponent
+    NavbarComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

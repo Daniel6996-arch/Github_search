@@ -1,0 +1,14 @@
+.repo{
+    border: 2px solid black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.padding{
+    padding-top: 5vh;
+    padding-left: 10vw;
+}
+.link{
+    text-decoration: none;
+}

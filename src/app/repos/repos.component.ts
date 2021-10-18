@@ -13,15 +13,16 @@ export class ReposComponent implements OnInit {
 
   constructor(private myReposService:MyReposService) { }
 
-getRepo(){
-  this.myReposService.getRepos().subscribe((data) => {
-    console.log(data);
-    this.repos = data
-    
-  });
-}
+
 
   ngOnInit(): void {
+    
+    this.myReposService.getRepos().subscribe((data) => {
+      console.log(data);
+      this.repos = data
+      
+    });
+    
   }
 
 }

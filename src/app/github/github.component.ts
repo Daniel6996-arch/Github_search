@@ -7,22 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-
+searchText = '';
 users?:any[]
 
 
   constructor(private githubService:GithubService) { }
 
-getUsers(){
-  this.githubService.getData().subscribe((data) => {
-    console.log(data);
-    this.users = data
-    
-  });
-}
-
 
   ngOnInit(): void {
+    this.githubService.getData().subscribe((data) => {
+      console.log(data);
+      this.users = data
+      
+    });
   }
 
 }
