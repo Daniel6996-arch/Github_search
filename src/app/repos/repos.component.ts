@@ -7,7 +7,7 @@ import { MyReposService } from '../services/myrepos.service';
   styleUrls: ['./repos.component.css']
 })
 export class ReposComponent implements OnInit {
-
+  searchText = '';
   repos?:any[]
 
 
