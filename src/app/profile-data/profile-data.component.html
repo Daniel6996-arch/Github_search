@@ -5,9 +5,9 @@
     </div>
     <div [ngClass]="'color'" class="container-fluid">
         <div [ngClass]="'margin'">
-            <pre><a>repos {{creds.public_repos}}</a></pre>
-            <pre><a>followers {{creds.followers}}</a></pre>
-            <pre><a>following {{creds.following}}</a></pre>
+            <pre [ngClass]="'bord'"><a>repos {{creds.public_repos}}</a></pre>
+            <pre [ngClass]="'bord'"><a>followers {{creds.followers}}</a></pre>
+            <pre [ngClass]="'bord'"><a>following {{creds.following}}</a></pre>
         </div>
         <div>
             <ul [ngClass]="'repo'" *ngFor="let repo of repos">

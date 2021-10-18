@@ -18,3 +18,9 @@
     height: 92vh;
     overflow: scroll;
 }
+.bord{
+    background-color: black;
+    color: blue;
+    border-radius: 50px;
+    cursor: pointer;
+}
