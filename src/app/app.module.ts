@@ -10,7 +10,8 @@ import { MyUserComponent } from './my-user/my-user.component';
 import { ReposComponent } from './repos/repos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FilterPipe } from './filter.pipe';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { ProfileDataComponent } from './profile-data/profile-data.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HighlightDirective } from './highlight.directive'
     ReposComponent,
     NavbarComponent,
     FilterPipe,
-    HighlightDirective
+    HighlightDirective,
+    ProfileDataComponent
   ],
   imports: [
     BrowserModule,

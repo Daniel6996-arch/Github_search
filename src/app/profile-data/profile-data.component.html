@@ -1,0 +1,19 @@
+<div [ngClass]="'flex'">
+    <div>
+        <img [src]="creds.avatar_url">
+        <pre class="display-4">{{creds.login}}</pre>
+    </div>
+    <div [ngClass]="'color'" class="container-fluid">
+        <div [ngClass]="'margin'">
+            <pre><a>repos {{creds.public_repos}}</a></pre>
+            <pre><a>followers {{creds.followers}}</a></pre>
+            <pre><a>following {{creds.following}}</a></pre>
+        </div>
+        <div>
+            <ul [ngClass]="'repo'" *ngFor="let repo of repos">
+                <pre>{{repo.name}}</pre>
+                <a href="{{repo.html_url}}" [ngClass]="'link'" target="_blank">{{repo.html_url}}</a>
+            </ul>
+        </div>
+    </div> 
+</div>

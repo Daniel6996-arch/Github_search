@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(158, 180, 221);
+}
+.repo{
+    border: 2px solid black;
+    margin-left: 7vw;
+}
+.margin{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.color{
+    background-color: rgb(133, 133, 192);
+    height: 92vh;
+    overflow: scroll;
+}

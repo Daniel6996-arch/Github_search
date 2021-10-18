@@ -13,16 +13,12 @@ creds?:any[]
 
   constructor(private myGitService:MyGitService) { }
 
-getUser(){
-  this.myGitService.getData().subscribe((data) => {
-    console.log(data);
-    this.creds = data
-    
-  });
-}
-
-
   ngOnInit(): void {
+    this.myGitService.getData().subscribe((data) => {
+      console.log(data);
+      this.creds = data
+      
+    });
   }
 
 }

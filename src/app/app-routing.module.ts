@@ -7,7 +7,12 @@ import { ReposComponent } from './repos/repos.component';
 const routes: Routes = [
   {path: 'home', component:MyUserComponent},
   {path: 'users', component:GithubComponent},
-  {path: 'repos', component:ReposComponent}
+  {path: 'repos', component:ReposComponent},
+  { 
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

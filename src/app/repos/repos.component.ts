@@ -5,6 +5,7 @@ import { MyReposService } from '../services/myrepos.service';
   selector: 'app-repos',
   templateUrl: './repos.component.html',
   styleUrls: ['./repos.component.css'],
+
   inputs: ['classToApply']
 
 })
