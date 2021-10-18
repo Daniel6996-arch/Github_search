@@ -4,11 +4,11 @@
       <div class="form-group">
         <label for="search-text">Goto Repository</label>
         <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
-          [(ngModel)]="searchText" placeholder="Enter text to search" autofocus>
+          [(ngModel)]="term" placeholder="Enter text to search" autofocus>
       </div>
       <ul class="list-group list-group-flush">
         <!-- results of ngFor is passed to appFilter with argument searchText -->
-        <li class="list-group-item" *ngFor="let repo of repos | filter: searchText">
+        <li class="list-group-item" *ngFor="let repo of repos | filter: term">
           {{repo.name}}
         </li>
       </ul>

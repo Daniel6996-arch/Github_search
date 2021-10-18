@@ -21,3 +21,7 @@
     height: 92vh;
     overflow: scroll;
 }
+.mar{
+    text-decoration: none;
+    background-color: rgb(7, 8, 8);
+}

@@ -9,7 +9,7 @@
 *The app should allow the user navigate between different pages.  
 *The user should be able to see my repositories.    
 ## link
-https://daniel6996-arch.github.io/Octo-quotes/
+https://daniel6996-arch.github.io/Github_search/
 ## Setup/Installation Requirements
 *This website best works on latest version browsers that support javascript.   
 *Older browsers my work ineffectively.   

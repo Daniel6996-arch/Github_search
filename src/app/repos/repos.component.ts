@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { MyReposService } from '../services/myrepos.service';
 
+
 @Component({
   selector: 'app-repos',
   templateUrl: './repos.component.html',
-  styleUrls: ['./repos.component.css'],
-
-  inputs: ['classToApply']
+  styleUrls: ['./repos.component.css']
 
 })
 export class ReposComponent implements OnInit {
-  searchText = '';
+  searchText = "";
   repos?:any[]
+  term! :any;
 
 
   constructor(private myReposService:MyReposService) { }

@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FilterPipe } from './filter.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { ProfileDataComponent } from './profile-data/profile-data.component'
+
 @NgModule({
   declarations: [
     AppComponent,

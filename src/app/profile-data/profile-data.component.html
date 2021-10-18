@@ -5,9 +5,9 @@
     </div>
     <div [ngClass]="'color'" class="container-fluid">
         <nav [ngClass]="'margin'">
-            <a href="">repos {{creds.public_repos}}</a>
-            <a href="">followers {{creds.followers}}</a>
-            <a href="">following {{creds.following}}</a>
+            <a class="nav-link" href="" [ngClass]="'mar'" routerLinkActive='active'>repos {{creds.public_repos}}</a>
+            <a class="nav-link" href="" [ngClass]="'mar'" routerLinkActive='active'>followers {{creds.followers}}</a>
+            <a class="nav-link" href="" [ngClass]="'mar'" routerLinkActive='active'>following {{creds.following}}</a>
         </nav>
         <div>
             <ul [ngClass]="'repo'" *ngFor="let repo of repos">
