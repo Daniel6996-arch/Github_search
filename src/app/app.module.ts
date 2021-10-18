@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyUserComponent } from './my-user/my-user.component';
 import { ReposComponent } from './repos/repos.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FilterPipe } from './filter.pipe'
+import { FilterPipe } from './filter.pipe';
+import { HighlightDirective } from './highlight.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { FilterPipe } from './filter.pipe'
     MyUserComponent,
     ReposComponent,
     NavbarComponent,
-    FilterPipe
+    FilterPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

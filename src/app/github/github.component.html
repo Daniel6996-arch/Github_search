@@ -25,31 +25,33 @@
         </div>
 </div>-->
 <div>
-    <h1>Github API getUsers</h1>
+    <h1 class="text-center display-2">Github API getUsers</h1>
 </div>
-<div class="content" role="main">
-    <div class="card">
-      <div class="form-group">
-        <label for="search-text">Search Text</label>
-        <input type="email" class="form-control" id="search-text" aria-describedby="search-text" 
-          [(ngModel)]="searchText" placeholder="Enter text to search" 
-          autofocus>
-      </div>
-      <ul class="list-group list-group-flush">
-        <!-- results of ngFor is passed to appFilter with argument searchText -->
-        <li class="list-group-item" *ngFor="let user of users | filter: searchText">
-          {{user.login}}
-        </li>
-      </ul>
+<div class="container-fluid" [ngClass]="'flex'" >
+    <div class="content" role="main">
+        <div class="card">
+          <div class="form-group">
+            <label for="search-text">Search Text</label>
+            <input type="email" class="form-control" id="search-text" aria-describedby="search-text" 
+              [(ngModel)]="searchText" placeholder="Enter text to search" 
+              autofocus>
+          </div>
+          <ul class="list-group list-group-flush">
+            <!-- results of ngFor is passed to appFilter with argument searchText -->
+            <li class="list-group-item" *ngFor="let user of users | filter: searchText">
+              {{user.login}}
+            </li>
+          </ul>
+        </div>
     </div>
+    <div [ngClass]="'flex-1'">
+        <ul [ngClass]="'type'" *ngFor="let user of users">
+            <img [ngClass]="'img'" src="{{user.avatar_url}}">
+            <pre><a href="{{user.url}}" [ngClass]="'none'">{{user.url}}</a></pre>
+            <pre>{{user.repos_url}}</pre>
+            <pre>{{user.login}}</pre>
+        </ul>
+    </div>
+    
 </div>
-<div>
-    <ul [ngClass]="'type'" *ngFor="let user of users">
-        <img [ngClass]="'img'" src="{{user.avatar_url}}">
-        <li>{{user.url}}</li>
-        <li>{{user.repos_url}}</li>
-        <li>{{user.login}}</li>
-    </ul>
-</div>
-
 

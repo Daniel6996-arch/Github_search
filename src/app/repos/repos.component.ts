@@ -4,7 +4,9 @@ import { MyReposService } from '../services/myrepos.service';
 @Component({
   selector: 'app-repos',
   templateUrl: './repos.component.html',
-  styleUrls: ['./repos.component.css']
+  styleUrls: ['./repos.component.css'],
+  inputs: ['classToApply']
+
 })
 export class ReposComponent implements OnInit {
   searchText = '';

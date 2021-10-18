@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.none{
+    text-decoration: none;
+}
+.img{
+    width: 20vw;
+}
+.flex-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: 10vw;
+}
