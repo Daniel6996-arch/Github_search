@@ -1,9 +1,9 @@
-<button (click)="getUser()">Get mydata</button>
+
+<button [ngClass]="'btn-center'" (click)="getUser()">Get mydata</button>
 <div *ngFor="let obj of creds | keyvalue">
     <div>
         <ul>
             <li>{{obj.key}}: {{obj.value}}</li>
         </ul>
     </div>
- 
 </div>
