@@ -44,7 +44,7 @@
           </ul>
         </div>
     </div>
-    <div [ngClass]="'flex-1'">
+    <div [ngClass]="'flex-1'" class="container-fluid">
         <ul [ngClass]="'type'" *ngFor="let user of users">
             <img [ngClass]="'img'" src="{{user.avatar_url}}">
             <pre><a href="{{user.url}}" [ngClass]="'none'">{{user.url}}</a></pre>

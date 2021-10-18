@@ -4,11 +4,11 @@
         <pre class="display-4">{{creds.login}}</pre>
     </div>
     <div [ngClass]="'color'" class="container-fluid">
-        <div [ngClass]="'margin'">
-            <pre [ngClass]="'bord'"><a>repos {{creds.public_repos}}</a></pre>
-            <pre [ngClass]="'bord'"><a>followers {{creds.followers}}</a></pre>
-            <pre [ngClass]="'bord'"><a>following {{creds.following}}</a></pre>
-        </div>
+        <nav [ngClass]="'margin'">
+            <a href="">repos {{creds.public_repos}}</a>
+            <a href="">followers {{creds.followers}}</a>
+            <a href="">following {{creds.following}}</a>
+        </nav>
         <div>
             <ul [ngClass]="'repo'" *ngFor="let repo of repos">
                 <pre>{{repo.name}}</pre>
